@@ -13,19 +13,13 @@ export const mutations = {
 
 
 export const actions = {
-  nuxtServerInit({
-    dispatch
-  }) {
+  nuxtServerInit({ dispatch }) {
     console.log('nuxtServerInit')
   },
-  async login({
-    commit
-  }) {
+  async login({ commit }) {
     commit('setToken', 'truetoken')
   },
-  logout({
-    commit
-  }) {
+  logout({ commit }) {
     commit('clearToken')
   }
 }
